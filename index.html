@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso para Todos | Acessibilidade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">
+        Pular para conteúdo principal
+    </a>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Acesso para Todos - Página Inicial">
+                <i class="ri-acessibility-line" aria-hidden="true"></i>
+                <span>Acesso<span>+</span></span>
+            </a>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html" class="active">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="escola.html">Escola</a>
+                    </li>
+                    <li>
+                        <a href="digital.html">Digital</a>
+                    </li>
+                    <li>
+                        <a href="cidade.html">Cidade</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="accessibility-button" id="accessibilityButton" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
+                <i class="ri-accessibility-line" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+    <aside class="accessibility-panel" id="accessibilityPanel" aria-label="Opções de acessibilidadde" hidden>
+        <h2>Opções de acessibilidade</h2>
+        <div class="accessibility-controls">
+            <button id="decreaseFont">
+                <i class="ri-font-size-2" aria-hidden="true"></i>
+                Diminuir texto
+            </button>
+            <button id="resetFont">
+                <i class="ri-refresh-line" aria-hidden="true"></i>
+                Texto Padrão
+            </button>
+            <button id="increaseFont">
+                <i class="ri-font-size" aria-hidden="true"></i>
+                Aumentar texto
+            </button>
+            <button id="contrastButton">
+                <i class="ri-contrast-2-line" aria-hidden="true"></i>
+                Alto contraste
+            </button>
+            <button id="motionButton">
+                <i class="ri-stop-circle-line" aria-hidden="true"></i>
+                Reduzir animações
+            </button>
+        </div>
+    </aside>
+    <main id="conteudo">
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">
+                        ACESSIBILIDADE NA VIDA COTIDIANA
+                    </p>
+                    <h1>
+                        Acessibilidade
+                        <span>para todos.</span>
+                    </h1>
+                    <p class="hero-description">
+                        Pequenas mudanças podem transformar espaços,
+                        esperiências e oportunidades em algo mais inclusivo.
+                    </p>
+                    <a href="#explore" class="primary-button">
+                        Conheça o projeto
+                        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-circle circle-one"></div>
+                    <div class="visual-circle circle-two"></div>
+
+                    <div class="visual-icon">
+                        <i class="ri-accessibility-fill"></i>
+                    </div>
+
+                    <div class="floating-icon icon-one">
+                        <i class="ri-heart-line"></i>
+                    </div>
+
+                    <div class="floating-icon icon-two">
+                        <i class="ri-wheelchair-line"></i>
+                    </div>
+
+                    <div class="floating-icon icon-three">
+                        <i class="ri-eye-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories" id="explore">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">EXPLORE</p>
+                        <h2>
+                            Acessibilidade em
+                            <span>diferentes espaços.</span>
+                        </h2>
+                    </div>
+                    <p>
+                        Entenda como a acessibilidade está presente
+                        em diferentes situações do nosso dia a dia.
+                    </p>
+                </div>
+                <div class="cards-grid">
+                    <article class="info-card">
+                        <div class="card-icon">
+                            <i class="ri-school-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Acessibilidade na escola</h3>
+                        <p>
+                            Como tornar ambientes educacionais
+                            mais inclusivos para todos
+                        </p>
+                        <a href="escola.html">
+                            Saiba mais
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                    <article class="info-card dark-card">
+                        <div class="card-icon">
+                            <i class="ri-road-map-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Acessibilidade na cidade</h3>
+                        <p>
+                            Calçadas, transporte, espaços públicos
+                            e mobilidade.
+                        </p>
+                        <a href="cidade.html">
+                            Saiba mais
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">
+                            <i class="ri-computer-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Acessibilidade digital</h3>
+                        <p>
+                            Como criar experiências digitais
+                            que possam ser utilizadas por todos.
+                        </p>
+                        <a href="digital.html">
+                            Saiba mais
+                            <i class="ri-arrow-right-line" aria-hidden="true"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div>
+                        <p class="eyebrow">
+                            INCLUSÃO COMEÇA COM ATITUDE
+                        </p>
+                        <h2>
+                            Tornar o mundo acessível
+                            é responsabilidade de todos.
+                        </h2>
+                        <p>
+                            Descubra atitudes simples que podem
+                            fazer diferença no cotidiano.
+                        </p>
+                    </div>
+                    <a href="cotidiano.html" class="secondary-button">
+                        Ver atitudes
+                        <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="importance">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">POR QUE IMPORTA?</p>
+                        <h2>
+                            Acessibilidade
+                            <span>é inclusão</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class=" container importance-grid">
+                <article>
+                    <i class="ri-equalizer-line" aria-hidden="true"></i>
+                    <h3>Mais autonomia</h3>
+                    <p>
+                        Ambientes acessíveis permitem que 
+                        mais pessoas realizem atividades
+                        com independência.
+                    </p>
+                </article>
+                <article>
+                    <i class="ri-group-line" aria-hidden="true"></i>
+                    <h3>Mais participação</h3>
+                    <p>
+                        A inclusão permite que diferentes
+                        pessoas participem da sociedade
+                        em igualdade de condições.
+                    </p>
+                </article>
+                <article>
+                    <i class="ri-heart-3-line" aria-hidden="true"></i>
+                    <h3>Mais inclusão</h3>
+                    <p>
+                        Acessibilidade ajuda a eliminar
+                        barreiras e criar experiências
+                        melhores para todos.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <i class="ri-acessibility-line" aria-hidden="true"></i>
+                <span>Acesso<span>+</span></span>
+            </div>
+            <p>
+                Um projeto sobre acessibilidade e inclusão.
+            </p>
+            <p>
+                2026 Acesso+
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso+ | Acessibilidade Na Escola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
+</head>
+<body>
+    <a href="#conteudo" class="skip-link">
+        Pular para conteúdo principal
+    </a>
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="Acesso para Todos - Página Inicial">
+                <span>Acesso<span>+</span></span>
+            </a>
+            <nav aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li>
+                        <a href="index.html">
+                            Início
+                        </a>
+                    </li>
+                    <li>
+                        <a href="escola.html" class="active">
+                            Escola
+                        </a>
+                    </li>
+                    <li>
+                        <a href="digital.html">
+                            Digital
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cidade.html">
+                            Cidade
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="accessibility-button" id="accessibilityButton" aria-expanded="false">
+                <i class="ri-accessibility-line" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+    <aside class="accessibility-panel" id="accessibilityPanel" aria-label="Opções de acessibilidade" hidden> 
+        <h2> Opções de acessibilidade </h2> 
+        <div class="accessibility-controls"> 
+            <button id="decreaseFont"> 
+                <i class="ri-font-size-2" aria-hidden="true"></i> 
+                Diminuir texto 
+            </button> 
+            <button id="resetFont"> 
+                <i class="ri-refresh-line" aria-hidden="true"></i>
+                Texto Padrão 
+            </button> 
+            <button id="increaseFont"> 
+                <i class="ri-font-size" aria-hidden="true"></i> 
+                Aumentar texto 
+            </button> 
+            <button id="contrastButton"> 
+                <i class="ri-contrast-2-line" aria-hidden="true"></i> 
+                Alto contraste 
+            </button> 
+            <button id="motionButton"> 
+                <i class="ri-stop-circle-line" aria-hidden="true"></i>
+                Reduzir animações 
+            </button>
+        </div>
+    </aside>
+    <main id="conteudo">
+        <section class="hero">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <p class="eyebrow">
+                        ACESSIBILIDADE NA EDUCAÇÃO
+                    </p>
+                    <h1>
+                        Uma escola
+                        <span>para todos.</span>
+                    </h1>
+                    <p class="hero-description">
+                        A acessibilidade no ambiente escolar ajuda a garantir que todos os estudantes possam aprender, participar e se desenvolver com autonomia.
+                    </p>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="visual-circle circle-one"></div>
+                    <div class="visual-circle circle-two"></div>
+                    <div class="visual-icon">
+                        <i class="ri-school-line"></i>
+                    </div>
+                    <div class="floating-icon icon-one">
+                        <i class="ri-wheelchair-line"></i>
+                    </div>
+                    <div class="floating-icon icon-two">
+                        <i class="ri-eye-line"></i>
+                    </div>
+                    <div class="floating-icon icon-three">
+                        <i class="ri-ear-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categories">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">ENTENDA</p>
+                        <h2>Acessibilidade
+                            <span>vai além da estrutura.</span>
+                        </h2>
+                    </div>
+                    <p>Uma escola acessível precisa considerar diferentes necessidades e eliminar barreiras que dificultam a participação dos estudantes.</p>
+                </div>
+                <div class="cards-grid">
+                    <article class="info-card">
+                        <div class="card-icon">
+                            <i class="ri-wheelchair-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Acessibilidade física</h3>
+                        <p>Rampas, corrimãos, banheiros acessíveis e espaços que permitam a circulação de diferentes pessoas.</p>
+                    </article>
+                    <article class="info-card dark-card">
+                        <div class="card-icon">
+                            <i class="ri-chat-voice-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Comunicação acessível</h3>
+                        <p>
+                            Informações apresentadas de diferentes formas para facilitar a comunicação e a compreensão.
+                        </p>
+                    </article>
+                    <article class="info-card">
+                        <div class="card-icon">
+                            <i class="ri-book-shelf-line" aria-hidden="true"></i>
+                        </div>
+                        <h3>Aprendizagem inclusiva</h3>
+                        <p>Recursos e estratégias que permitem que diferentes estudantes participem do processo de aprendizagem.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta-box">
+                    <div>
+                        <p class="eyebrow">
+                            NA PRÁTICA
+                        </p>
+                        <h2>
+                            Pequenas mudanças fazem diferença
+                        </h2>
+                        <p>
+                            Ouvir os estudantes, adaptar materiais e respeitar diferentes formas de aprender são atitudes que ajudam a construir uma escola mais inclusiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="importance">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">
+                            POR QUE IMPORTA?
+                        </p>
+                        <h2>
+                            Educação acessível
+                            <span>é participação.</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container importance-grid">
+                <article>
+                <i class="ri-user-heart-line" aria-hidden="true"></i>
+                    <h3>Mais autonomia</h3>
+                    <p>
+                        Recursos acessíveis ajudam os estudantes a realizar atividades com mais independência
+                    </p>
+                </article>
+                <article>
+                    <i class="ri-group-line" aria-hidden="true"></i>
+                    <h3>Mais participação</h3>
+                    <p>
+                        ambientes inclusivos permitem que mais 
+                        estudantes participem das atividades escolares.
+                    </p>
+                </article>
+                <article>
+                    <i class="ri-lightbulb-line" aria-hidden="true"></i>
+                    <h3>Mais oportunidades</h3>
+                    <p>
+                        Quando as barreiras diminuem, diferentes
+                        pessoas conseguem desenvolver seu potencial.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <i class="ri-acessibility-line" aria-hidden="true"></i>
+                <span>Acesso<span>+</span></span>
+            </div>
+            <p>
+                Um projeto sobre acessibilidade e inclusão.
+            </p>
+            <p>
+                2026 Acesso+
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
