@@ -8,98 +8,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
 </head>
 <body>
-    <a href="#conteudo" class="skip-link">
-        Pular para conteúdo principal
-    </a>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="Acesso para Todos - Página Inicial">
+            <a href="index.html" class="logo" aria-label="Acesso+ — Página inicial">
                 <span>Acesso<span>+</span></span>
             </a>
             <nav aria-label="Navegação principal">
                 <ul class="nav-list">
-                    <li>
-                        <a href="index.html">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="escola.html">
-                            Escola
-                        </a>
-                    </li>
-                    <li>
-                        <a href="digital.html" class="active">
-                            Digital
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cidade.html">Cidade</a>
-                    </li>
-                    </li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="escola.html">Escola</a></li>
+                    <li><a href="digital.html" aria-current="page">Digital</a></li>
+                    <li><a href="cidade.html">Cidade</a></li>
+                    <li><a href="cotidiano.html">Cotidiano</a></li>
                 </ul>
             </nav>
-            <button class="accessibility-button" id="accessibilityButton" aria-expanded="false">
-                <i class="ri-accessibility-line" aria-hidden="true"></i>
+            <button type="button" id="accessibilityButton" aria-controls="accessibilityPanel" aria-expanded="false">
+                Acessibilidade
             </button>
         </div>
     </header>
-    <aside class="accessibility-panel" id="accessibilityPanel" aria-label="Opções de acessibilidade" hidden> 
-        <h2> Opções de acessibilidade </h2> 
-        <div class="accessibility-controls"> 
-            <button id="decreaseFont"> 
-                <i class="ri-font-size-2" aria-hidden="true"></i> 
-                Diminuir texto 
-            </button> 
-            <button id="resetFont"> 
-                <i class="ri-refresh-line" aria-hidden="true"></i>
-                Texto Padrão 
-            </button> 
-            <button id="increaseFont"> 
-                <i class="ri-font-size" aria-hidden="true"></i> 
-                Aumentar texto 
-            </button> 
-            <button id="contrastButton"> 
-                <i class="ri-contrast-2-line" aria-hidden="true"></i> 
-                Alto contraste 
-            </button> 
-            <button id="motionButton"> 
-                <i class="ri-stop-circle-line" aria-hidden="true"></i>
-                Reduzir animações 
-            </button>
+
+    <aside class="container accessibility-panel" id="accessibilityPanel" aria-labelledby="accessibilityTitle" hidden>
+        <h2 id="accessibilityTitle">Opções de acessibilidade</h2>
+        <div class="accessibility-controls">
+            <button type="button" id="decreaseFont">Diminuir texto</button>
+            <button type="button" id="resetFont">Texto padrão</button>
+            <button type="button" id="increaseFont">Aumentar texto</button>
+            <button type="button" id="contrastButton" aria-pressed="false">Alto contraste</button>
         </div>
     </aside>
-    <main id="conteudo">
+
+    <main id="conteudo" tabindex="-1">
         <section class="hero">
             <div class="container hero-content">
                 <div class="hero-text">
-                    <p class="eyebrow">
-                        ACESSIBILIDADE DIGITAL
-                    </p>
+                    <p class="eyebrow">ACESSIBILIDADE DIGITAL</p>
                     <h1>
                         A tecnologia
                         <span>para todos.</span>
                     </h1>
-                    <p class="hero-description">
-                        Um ambiente digital acessível permite que mais pessoas naveguem, compreendam informações e utilizem tecnologias com autonomia.
-                    </p>
+                    <p class="hero-description">Um ambiente digital acessível permite que mais pessoas naveguem, compreendam informações e utilizem tecnologias com autonomia.</p>
                 </div>
-                <div class="hero-visual" aria-hidden="true">
-                    <div class="visual-circle circle-one"></div>
-                    <div class="visual-circle circle-two"></div>
-                    <div class="visual-icon">
-                        <i class="ri-computer-line"></i>
-                    </div>
-                    <div class="floating-icon icon-one">
-                        <i class="ri-eye-line"></i>
-                    </div>
-                    <div class="floating-icon icon-two">
-                        <i class="ri-keyboard-line"></i>
-                    </div>
-                    <div class="floating-icon icon-three">
-                        <i class="ri-volume-up-line"></i>
-                    </div>
-                </div>
+                <div class="hero-visual" aria-hidden="true"><i class="ri-computer-line"></i></div>
             </div>
         </section>
         <section class="categories">
@@ -113,47 +64,29 @@
                     </div>
                     <p>Existem diferentes recursos que ajudam a tornar sites, aplicativos e conteúdos digitais mais fáceis de utilizar.</p>
                 </div>
-                <div class="cards-grid">
-                    <article class="info-card">
-                        <div class="card-icon">
-                            <i class="ri-eye-line" aria-hidden="true"></i>
-                        </div>
+                <ul class="topic-list">
+                    <li>
                         <h3>Conteúdo visual</h3>
                         <p>Contraste adequado, textos legíveis e descrições para imagens ajudam diferentes pessoas a compreender o conteúdo.</p>
-                    </article>
-                    <article class="info-card dark-card">
-                        <div class="card-icon">
-                            <i class="ri-keyboard-line" aria-hidden="true"></i>
-                        </div>
+                    </li>
+                    <li>
                         <h3>Navegação pelo teclado</h3>
-                        <p>
-                            Um site acessível deve permitir que suas principais funções sejam utilizadas sem depender exclusivamente do mouse.
-                        </p>
-                    </article>
-                    <article class="info-card">
-                        <div class="card-icon">
-                            <i class="ri-volume-up-line" aria-hidden="true"></i>
-                        </div>
+                        <p>Um site acessível deve permitir que suas principais funções sejam utilizadas sem depender exclusivamente do mouse.</p>
+                    </li>
+                    <li>
                         <h3>Leitores de tela</h3>
                         <p>Uma estrutura HTML bem organizada ajuda tecnologias assistivas a interpretar e apresentar as informações.</p>
-                    </article>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="cta">
             <div class="container">
                 <div class="cta-box">
                     <div>
-                        <p class="eyebrow">
-                            BOAS PRÁTICAS
-                        </p>
-                        <h2>
-                            Acessibilidade começa 
-                            no desenvolvimento.
-                        </h2>
-                        <p>
-                            Usar textos alternativos, títulos organizados, botões identificados e uma boa hierarquia de conteúdo são algumas atitudes que tornam uma experiência digital mais inclusiva.
-                        </p>
+                        <p class="eyebrow">BOAS PRÁTICAS</p>
+                        <h2>Acessibilidade começa no desenvolvimento.</h2>
+                        <p>Usar textos alternativos, títulos organizados, botões identificados e uma boa hierarquia de conteúdo são algumas atitudes que tornam uma experiência digital mais inclusiva.</p>
                     </div>
                 </div>
             </div>
@@ -162,9 +95,7 @@
             <div class="container">
                 <div class="section-heading">
                     <div>
-                        <p class="eyebrow">
-                            POR QUE IMPORTA?
-                        </p>
+                        <p class="eyebrow">POR QUE IMPORTA?</p>
                         <h2>
                             Acessibilidade digital
                             <span>é autonomia.</span>
@@ -176,31 +107,26 @@
                 <article>
                 <i class="ri-user-follow-line" aria-hidden="true"></i>
                     <h3>Mais independência</h3>
-                    <p>
-                        Recursos acessíveis permitem que mais pessoas utilizem tecnologias sem depender constantemente de outras pessoas.
-                    </p>
+                    <p>Recursos acessíveis permitem que mais pessoas utilizem tecnologias sem depender constantemente de outras pessoas.</p>
                 </article>
                 <article>
                     <i class="ri-global-line" aria-hidden="true"></i>
                     <h3>Mais acesso</h3>
-                    <p>
-                        A internet deve permitir que diferentes pessoas tenham acesso à informação e aos serviços digitais.
-                    </p>
+                    <p>A internet deve permitir que diferentes pessoas tenham acesso à informação e aos serviços digitais.</p>
                 </article>
                 <article>
                     <i class="ri-code-s-slash-line" aria-hidden="true"></i>
                     <h3>Melhor desenvolvimento</h3>
-                    <p>
-                        Pensar em acessibilidade durante o desenvolvimento ajuda a criar experiências digitais melhores para todos.
-                    </p>
+                    <p>Pensar em acessibilidade durante o desenvolvimento ajuda a criar experiências digitais melhores para todos.</p>
                 </article>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container footer-content">
             <div class="logo">
-                <i class="ri-acessibility-line" aria-hidden="true"></i>
+                <i class="ri-accessibility-line" aria-hidden="true"></i>
                 <span>Acesso<span>+</span></span>
             </div>
             <p>

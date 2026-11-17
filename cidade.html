@@ -3,334 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acesso+ | Acessibilidade Digital</title>
+    <title>Acesso+ | Acessibilidade na Cidade</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css">
 </head>
 <body>
-    <a href="#conteudo" class="skip-link">
-        Pular para conteúdo principal
-    </a>
+    <a href="#conteudo" class="skip-link">Pular para o conteúdo principal</a>
     <header class="header">
         <div class="container nav-container">
-            <a href="index.html" class="logo" aria-label="Acesso para Todos - Página Inicial">
+            <a href="index.html" class="logo" aria-label="Acesso+ — Página inicial">
                 <span>Acesso<span>+</span></span>
             </a>
             <nav aria-label="Navegação principal">
                 <ul class="nav-list">
-                    <li>
-                        <a href="index.html">
-                            Início
-                        </a>
-                    </li>
-                    <li>
-                        <a href="escola.html">
-                            Escola
-                        </a>
-                    </li>
-                    <li>
-                        <a href="digital.html">
-                            Digital
-                        </a>
-                    </li>
-                    <li>
-                        <a href="cidade.html" class="active">
-                            Cidade
-                        </a>
-                    </li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="escola.html">Escola</a></li>
+                    <li><a href="digital.html">Digital</a></li>
+                    <li><a href="cidade.html" aria-current="page">Cidade</a></li>
+                    <li><a href="cotidiano.html">Cotidiano</a></li>
                 </ul>
             </nav>
-            <button class="accessibility-button" id="accessibilityButton" aria-label="Abrir opções de acessibilidade" aria-expanded="false">
-                <i class="ri-accessibility-line" aria-hidden="true"></i>
+            <button type="button" id="accessibilityButton" aria-controls="accessibilityPanel" aria-expanded="false">
+                Acessibilidade
             </button>
         </div>
     </header>
-    <aside class="accessibility-panel" id="accessibilityPanel" aria-label="Opções de acessibilidade" hidden> 
-        <h2> Opções de acessibilidade </h2> 
-        <div class="accessibility-controls"> 
-            <button id="decreaseFont"> 
-                <i class="ri-font-size-2" aria-hidden="true"></i> 
-                Diminuir texto 
-            </button> 
-            <button id="resetFont"> 
-                <i class="ri-refresh-line" aria-hidden="true"></i>
-                Texto Padrão 
-            </button> 
-            <button id="increaseFont"> 
-                <i class="ri-font-size" aria-hidden="true"></i> 
-                Aumentar texto 
-            </button> 
-            <button id="contrastButton"> 
-                <i class="ri-contrast-2-line" aria-hidden="true"></i> 
-                Alto contraste 
-            </button> 
-            <button id="motionButton"> 
-                <i class="ri-stop-circle-line" aria-hidden="true"></i>
-                Reduzir animações 
-            </button>
+
+    <aside class="container accessibility-panel" id="accessibilityPanel" aria-labelledby="accessibilityTitle" hidden>
+        <h2 id="accessibilityTitle">Opções de acessibilidade</h2>
+        <div class="accessibility-controls">
+            <button type="button" id="decreaseFont">Diminuir texto</button>
+            <button type="button" id="resetFont">Texto padrão</button>
+            <button type="button" id="increaseFont">Aumentar texto</button>
+            <button type="button" id="contrastButton" aria-pressed="false">Alto contraste</button>
         </div>
     </aside>
-    <main id="conteudo">
 
-
-        <!-- HERO DA PÁGINA -->
+    <main id="conteudo" tabindex="-1">
         <section class="hero">
-
             <div class="container hero-content">
-
                 <div class="hero-text">
-
-                    <p class="eyebrow">
-                        ACESSIBILIDADE NA CIDADE
-                    </p>
-
+                    <p class="eyebrow">ACESSIBILIDADE NA CIDADE</p>
                     <h1>
                         Uma cidade
                         <span>para todos.</span>
                     </h1>
-
-                    <p class="hero-description">
-                        Uma cidade acessível permite que diferentes
-                        pessoas possam circular, utilizar espaços públicos
-                        e participar da vida urbana com autonomia.
-                    </p>
-
+                    <p class="hero-description">Uma cidade acessível permite que diferentes pessoas possam circular, utilizar espaços públicos e participar da vida urbana com autonomia.</p>
                 </div>
-                <div class="hero-visual" aria-hidden="true">
-
-                    <div class="visual-circle circle-one"></div>
-
-                    <div class="visual-circle circle-two"></div>
-
-                    <div class="visual-icon">
-                        <i class="ri-road-map-line"></i>
-                    </div>
-
-                    <div class="floating-icon icon-one">
-                        <i class="ri-wheelchair-line"></i>
-                    </div>
-
-                    <div class="floating-icon icon-two">
-                        <i class="ri-bus-line"></i>
-                    </div>
-
-                    <div class="floating-icon icon-three">
-                        <i class="ri-map-pin-line"></i>
-                    </div>
-
-                </div>
-
+                <div class="hero-visual" aria-hidden="true"><i class="ri-road-map-line"></i></div>
             </div>
-
         </section>
         <section class="categories">
-
             <div class="container">
-
                 <div class="section-heading">
-
                     <div>
-
-                        <p class="eyebrow">
-                            NO DIA A DIA
-                        </p>
-
+                        <p class="eyebrow">NO DIA A DIA</p>
                         <h2>
                             Acessibilidade
                             <span>também está nas ruas.</span>
                         </h2>
-
                     </div>
-
-                    <p>
-                        Calçadas, transportes e espaços públicos precisam
-                        considerar diferentes formas de mobilidade e
-                        diferentes necessidades.
-                    </p>
-
+                    <p>Calçadas, transportes e espaços públicos precisam considerar diferentes formas de mobilidade e diferentes necessidades.</p>
                 </div>
-                <div class="cards-grid">
-                    <article class="info-card">
-
-                        <div class="card-icon">
-                            <i class="ri-road-map-line"
-                                aria-hidden="true"></i>
-                        </div>
-
-                        <h3>
-                            Calçadas acessíveis
-                        </h3>
-
-                        <p>
-                            Calçadas regulares, bem conservadas e com
-                            espaço adequado facilitam a circulação de
-                            pessoas com diferentes necessidades.
-                        </p>
-
-                    </article>
-                    <article class="info-card dark-card">
-
-                        <div class="card-icon">
-                            <i class="ri-bus-line"
-                                aria-hidden="true"></i>
-                        </div>
-
-                        <h3>
-                            Transporte acessível
-                        </h3>
-
-                        <p>
-                            Ônibus, terminais e outros meios de transporte
-                            devem oferecer condições para que diferentes
-                            pessoas possam utilizá-los com autonomia.
-                        </p>
-
-                    </article>
-                    <article class="info-card">
-
-                        <div class="card-icon">
-                            <i class="ri-building-line"
-                                aria-hidden="true"></i>
-                        </div>
-
-                        <h3>
-                            Espaços públicos
-                        </h3>
-
-                        <p>
-                            Praças, prédios e áreas de convivência devem
-                            ser planejados para permitir o acesso e a
-                            participação de todos.
-                        </p>
-
-                    </article>
-
-                </div>
-
+                <ul class="topic-list">
+                    <li>
+                        <h3>Calçadas acessíveis</h3>
+                        <p>Calçadas regulares, bem conservadas e com espaço adequado facilitam a circulação de pessoas com diferentes necessidades.</p>
+                    </li>
+                    <li>
+                        <h3>Transporte acessível</h3>
+                        <p>Ônibus, terminais e outros meios de transporte devem oferecer condições para que diferentes pessoas possam utilizá-los com autonomia.</p>
+                    </li>
+                    <li>
+                        <h3>Espaços públicos</h3>
+                        <p>Praças, prédios e áreas de convivência devem ser planejados para permitir o acesso e a participação de todos.</p>
+                    </li>
+                </ul>
             </div>
-
         </section>
-
-
-        <!-- MOBILIDADE -->
         <section class="cta">
-
             <div class="container">
-
                 <div class="cta-box">
-
                     <div>
-
-                        <p class="eyebrow">
-                            MOBILIDADE E INCLUSÃO
-                        </p>
-
-                        <h2>
-                            Poder circular também
-                            é ter autonomia.
-                        </h2>
-
-                        <p>
-                            Quando as barreiras físicas são reduzidas,
-                            mais pessoas conseguem estudar, trabalhar,
-                            utilizar serviços e participar das atividades
-                            da cidade.
-                        </p>
-
+                        <p class="eyebrow">MOBILIDADE E INCLUSÃO</p>
+                        <h2>Poder circular também é ter autonomia.</h2>
+                        <p>Quando as barreiras físicas são reduzidas, mais pessoas conseguem estudar, trabalhar, utilizar serviços e participar das atividades da cidade.</p>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
-
-
-        <!-- POR QUE IMPORTA -->
         <section class="importance">
-
             <div class="container">
-
                 <div class="section-heading">
-
                     <div>
-
-                        <p class="eyebrow">
-                            POR QUE IMPORTA?
-                        </p>
-
+                        <p class="eyebrow">POR QUE IMPORTA?</p>
                         <h2>
                             Uma cidade acessível
                             <span>é uma cidade melhor.</span>
                         </h2>
-
                     </div>
-
                 </div>
-
             </div>
-
-
             <div class="container importance-grid">
-
-
                 <article>
-
-                    <i class="ri-walk-line"
-                        aria-hidden="true"></i>
-
-                    <h3>
-                        Mais mobilidade
-                    </h3>
-
-                    <p>
-                        Ambientes acessíveis facilitam a circulação
-                        e permitem que mais pessoas se movimentem
-                        pela cidade com independência.
-                    </p>
-
+                    <i class="ri-walk-line" aria-hidden="true"></i>
+                    <h3>Mais mobilidade</h3>
+                    <p>Ambientes acessíveis facilitam a circulação e permitem que mais pessoas se movimentem pela cidade com independência.</p>
                 </article>
-
-
                 <article>
-
-                    <i class="ri-community-line"
-                        aria-hidden="true"></i>
-
-                    <h3>
-                        Mais participação
-                    </h3>
-
-                    <p>
-                        O acesso aos espaços públicos permite que
-                        diferentes pessoas participem da vida
-                        social da cidade.
-                    </p>
-
+                    <i class="ri-community-line" aria-hidden="true"></i>
+                    <h3>Mais participação</h3>
+                    <p>O acesso aos espaços públicos permite que diferentes pessoas participem da vida social da cidade.</p>
                 </article>
-
-
                 <article>
-
-                    <i class="ri-heart-3-line"
-                        aria-hidden="true"></i>
-
-                    <h3>
-                        Mais inclusão
-                    </h3>
-
-                    <p>
-                        Reduzir barreiras ajuda a construir espaços
-                        urbanos mais acolhedores e inclusivos.
-                    </p>
-
+                    <i class="ri-heart-3-line" aria-hidden="true"></i>
+                    <h3>Mais inclusão</h3>
+                    <p>Reduzir barreiras ajuda a construir espaços urbanos mais acolhedores e inclusivos.</p>
                 </article>
-
-
             </div>
-
         </section>
-
-
     </main>
-    ```
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="logo">
+                <i class="ri-accessibility-line" aria-hidden="true"></i>
+                <span>Acesso<span>+</span></span>
+            </div>
+            <p>
+                Um projeto sobre acessibilidade e inclusão.
+            </p>
+            <p>
+                2026 Acesso+
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
