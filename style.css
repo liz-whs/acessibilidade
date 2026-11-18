@@ -210,14 +210,12 @@ button:focus-visible {
 
 .section-heading p:not(.eyebrow),
 .topic-list p,
-.cta-box p:not(.eyebrow),
-[aria-labelledby="conteudo-complementar"] p {
+.cta-box p:not(.eyebrow) {
     max-width: 65ch;
 }
 
 .section-heading h2,
-.cta-box h2,
-#conteudo-complementar {
+.cta-box h2 {
     max-width: 32ch;
     font-size: 1.75rem;
 }
@@ -232,21 +230,8 @@ button:focus-visible {
 }
 
 .topic-list h3,
-.importance-grid h3,
-[aria-labelledby="conteudo-complementar"] h3 {
+.importance-grid h3 {
     margin-bottom: 0.4rem;
-}
-
-[aria-labelledby="conteudo-complementar"] {
-    border-top: 1px solid var(--borda);
-}
-
-[aria-labelledby="conteudo-complementar"] h3 {
-    margin-top: 1.75rem;
-}
-
-[aria-labelledby="conteudo-complementar"] p + p {
-    margin-top: 0.85rem;
 }
 
 .importance-grid {
